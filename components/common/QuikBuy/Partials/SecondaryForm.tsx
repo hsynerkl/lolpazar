@@ -3,7 +3,11 @@ import Image from "next/image";
 
 type SecondaryFormProps = {
   handleGoBack: () => void;
-  handleBlueEssence: (blueEssence: string, value: number) => void;
+  handleBlueEssence: (
+    blueEssence: string,
+    value: number,
+    price: number
+  ) => void;
 };
 
 const SecondaryForm: FC<SecondaryFormProps> = ({
@@ -24,7 +28,7 @@ const SecondaryForm: FC<SecondaryFormProps> = ({
           <div
             className="flex gap-2 flex-col items-center bg-[#131721] px-4 py-3 rounded-xl cursor-pointer hover:scale-105 duration-300 transition"
             onClick={() => {
-              handleBlueEssence("40.000", 2);
+              handleBlueEssence("40.000", 2, 14.99);
             }}
           >
             <div className="flex ">
@@ -45,7 +49,7 @@ const SecondaryForm: FC<SecondaryFormProps> = ({
           <div
             className="flex gap-2 flex-col items-center bg-[#131721] px-4 py-3 rounded-xl cursor-pointer hover:scale-105 duration-300 transition"
             onClick={() => {
-              handleBlueEssence("50.000", 2);
+              handleBlueEssence("50.000", 2, 24.99);
             }}
           >
             <div className="flex">
@@ -66,7 +70,7 @@ const SecondaryForm: FC<SecondaryFormProps> = ({
           <div
             className="flex gap-2 flex-col items-center bg-[#131721] px-4 py-3 rounded-xl cursor-pointer hover:scale-105 duration-300 transition"
             onClick={() => {
-              handleBlueEssence("60.000", 2);
+              handleBlueEssence("60.000", 2, 34.99);
             }}
           >
             <div className="flex">

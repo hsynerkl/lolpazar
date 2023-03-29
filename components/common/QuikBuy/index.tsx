@@ -8,14 +8,24 @@ const QuickBuy = () => {
     value: 0,
     region: "",
     blueEssence: "",
+    price: 0,
   });
 
   const handleRegion = (region: string, value: number) => {
     setFormState({ ...formState, region: region, value: value });
   };
 
-  const handleBlueEssence = (blueEssence: string, value: number) => {
-    setFormState({ ...formState, blueEssence: blueEssence, value: value });
+  const handleBlueEssence = (
+    blueEssence: string,
+    value: number,
+    price: number
+  ) => {
+    setFormState({
+      ...formState,
+      blueEssence: blueEssence,
+      value: value,
+      price: price,
+    });
   };
 
   const handleGoBack = () => {
@@ -30,6 +40,7 @@ const QuickBuy = () => {
         ...formState,
         value: formState.value - 1,
         blueEssence: "",
+        price: 0,
       });
   };
 
