@@ -57,7 +57,7 @@ const SecondaryForm: FC<SecondaryFormProps> = ({
               />
               <p className="font-bold">50,000</p>
             </div>
-            <p className="text-xs text-center text-white text-opacity-30">
+            <p className="text-xs text-center text-[#6f7d95]">
               <span className="text-[#3fbdf9]">24.99₺</span>'den başlayan
               fiyatlarla.
             </p>
@@ -78,7 +78,7 @@ const SecondaryForm: FC<SecondaryFormProps> = ({
               />
               <p className="font-bold">60,000</p>
             </div>
-            <p className="text-xs text-center text-white text-opacity-30">
+            <p className="text-xs text-center text-[#6f7d95]">
               <span className="text-[#3fbdf9]">34.99₺</span>'den başlayan
               fiyatlarla.
             </p>

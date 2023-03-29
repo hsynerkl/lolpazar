@@ -21,7 +21,7 @@ export default function Home() {
               </span>{" "}
               Unranked Hesap Satın Alın
             </p>
-            <p className="text-xl text-white text-opacity-50">
+            <p className="text-xl text-[#6f7d95]">
               Bir Lol smurf hesabı satın almak mı istiyorsunuz? Bir sonraki
               dereceli yolculuğunuza Turbosmurfs derecesiz lig hesabıyla
               başlayın.

@@ -16,9 +16,25 @@ const ThirdForm: FC<ThirdFormProps> = ({ handleGoBack, formState }) => {
   return (
     <div className="opening-anim">
       <div className="flex flex-col items-center py-6">
-        <p className="text-transparent pb-6 text-lg bg-gradient-to-r from-[#CC75FF] bg-clip-text to-[#34D5FB] font-semibold">
+        <p className="text-transparent text-lg bg-gradient-to-r from-[#CC75FF] bg-clip-text to-[#34D5FB] font-semibold">
           Özetiniz
         </p>
+        <p className="text-xs text-[#6f7d95] pb-10">
+          Sıralama yolculuğunuzda size bol şans diliyoruz.
+        </p>
+
+        <div className="grid grid-cols-2 gap-10">
+          <Image
+            src="https://turbosmurfs.gg/storage/products/b1421c9718f272d7c43d1cbe00c21427.jpg"
+            alt="summary"
+            className="ml-5"
+            width={256}
+            height={233}
+          />
+          <div>
+            <p className="text-center">Hesap Detayları</p>
+          </div>
+        </div>
       </div>
 
       <div

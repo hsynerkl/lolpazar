@@ -83,7 +83,7 @@ const FirstForm: FC<FirstFormProps> = ({ handleRegion }) => {
             </g>
           </svg>
 
-          <p className="text-xs text-white text-opacity-80">Avrupa Batı</p>
+          <p className="text-xs text-[#6f7d95]">Avrupa Batı</p>
         </div>
 
         <div
@@ -131,7 +131,7 @@ const FirstForm: FC<FirstFormProps> = ({ handleRegion }) => {
               ></path>
             </g>
           </svg>
-          <p className="text-xs text-white text-opacity-80">Türkiye</p>
+          <p className="text-xs text-[#6f7d95]">Türkiye</p>
         </div>
       </div>
     </div>
