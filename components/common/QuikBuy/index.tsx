@@ -48,7 +48,7 @@ const QuickBuy = () => {
 
   return (
     <div className="bg-[#1c1f2c] rounded-xl overflow-hidden h-fit">
-      <p className="bg-[#141721] text-[#6f7d95] text-xs text-center py-1">
+      <p className="bg-[#141721] text-[#6f7d95] text-xs font-semibold text-center py-1">
         Hızlı Satın Al
       </p>
       {formState.value === 0 && <FirstForm handleRegion={handleRegion} />}
