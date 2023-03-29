@@ -18,3 +18,16 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.opening-anim {
+  animation: opening-keyframe 1s ease;
+}
+
+@keyframes opening-keyframe {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

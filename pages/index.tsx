@@ -1,4 +1,4 @@
-import QuickBuy from "components/common/QuickBuy";
+import QuickBuy from "components/common/QuikBuy";
 
 export default function Home() {
   return (
@@ -13,8 +13,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2">
-          <div className="flex justify-center flex-col gap-5">
+        <div className="grid lg:grid-cols-2 gap-10">
+          <div className="flex flex-col gap-5 mt-10">
             <p className="text-5xl">
               <span className="text-transparent font-bold bg-gradient-to-r from-[#34D5FB] bg-clip-text to-[#CC75FF]">
                 League of Legends
