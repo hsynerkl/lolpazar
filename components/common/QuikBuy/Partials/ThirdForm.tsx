@@ -145,7 +145,7 @@ const ThirdForm: FC<ThirdFormProps> = ({ handleGoBack, formState }) => {
             </svg>
           </div>
 
-          <div className="py-2 px-4 border-b border-b-[#6f7d95] border-t border-t-[#6f7d95]">
+          <div className="w-10 flex items-center justify-center h-10 border-b border-b-[#6f7d95] border-t border-t-[#6f7d95]">
             {quantity}
           </div>
 
@@ -163,10 +163,7 @@ const ThirdForm: FC<ThirdFormProps> = ({ handleGoBack, formState }) => {
           </div>
         </div>
 
-        <div
-          className="rounded-full flex items-center gap-1 font-semibold bg-[#43b6f9] w-fit px-3 text-xs py-2 hover:opacity-80 cursor-pointer transition duration-300"
-          onClick={handleGoBack}
-        >
+        <div className="rounded-full whitespace-nowrap flex justify-center items-center gap-1 font-semibold bg-[#43b6f9] w-44 px-3 text-xs py-2 hover:opacity-80 cursor-pointer transition duration-300">
           Devam Et (
           {(formState.price * quantity)
             .toFixed(2)

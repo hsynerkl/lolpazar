@@ -23,11 +23,28 @@ a {
   animation: opening-keyframe 1s ease;
 }
 
+.scroll-text-anim {
+  animation: scroll-text-keyframe 16s infinite linear;
+}
+
+.card-shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
 @keyframes opening-keyframe {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes scroll-text-keyframe {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
   }
 }
