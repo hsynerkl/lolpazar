@@ -10,7 +10,7 @@ const SecondSection = () => {
   };
 
   return (
-    <section className="bg-[#1c1f2c] min-h-screen text-white py-20">
+    <section className="bg-[#1c1f2c] text-white py-20">
       <div className="container">
         <Topbar region={region} handleRegion={handleRegion} />
         <Cards region={region} />
