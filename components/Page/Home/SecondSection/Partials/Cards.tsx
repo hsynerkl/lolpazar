@@ -4,32 +4,6 @@ import { FC } from "react";
 const mockCards = [
   [
     {
-      img: "https://turbosmurfs.gg/storage/products/e0ae212a474f6f082d616f707cb67efd.jpg",
-      title: "40,000 Mavi Öz Derecesiz Smurf - TR",
-      price: "14,99",
-      blueEssence: "40,000+",
-      region: "Türkiye",
-      rank: "Fresh Derecesiz",
-    },
-    {
-      img: "https://turbosmurfs.gg/storage/products/98833fc161eec943040ddeec465c6d38.jpg",
-      title: "50,000 Mavi Öz Derecesiz Smurf - TR",
-      price: "14,99",
-      blueEssence: "50,000+",
-      region: "Türkiye",
-      rank: "Fresh Derecesiz",
-    },
-    {
-      img: "https://turbosmurfs.gg/storage/products/b1421c9718f272d7c43d1cbe00c21427.jpg",
-      title: "60,000 Mavi Öz Derecesiz Smurf - TR",
-      price: "14,99",
-      blueEssence: "60,000+",
-      region: "Türkiye",
-      rank: "Fresh Derecesiz",
-    },
-  ],
-  [
-    {
       img: "https://turbosmurfs.gg/storage/products/c20f5275b11127a02eac1ba75ef3a3e2.jpg",
       title: "40,000 Mavi Öz Derecesiz Smurf - EUW",
       price: "14,99",
@@ -40,7 +14,7 @@ const mockCards = [
     {
       img: "https://turbosmurfs.gg/storage/products/c20f5275b11127a02eac1ba75ef3a3e2.jpg",
       title: "50,000 Mavi Öz Derecesiz Smurf - EUW",
-      price: "14,99",
+      price: "24,99",
       blueEssence: "50,000+",
       region: "Avrupa Batı",
       rank: "Fresh Derecesiz",
@@ -48,9 +22,35 @@ const mockCards = [
     {
       img: "https://turbosmurfs.gg/storage/products/c20f5275b11127a02eac1ba75ef3a3e2.jpg",
       title: "60,000 Mavi Öz Derecesiz Smurf - EUW",
-      price: "14,99",
+      price: "34,99",
       blueEssence: "60,000+",
       region: "Avrupa Batı",
+      rank: "Fresh Derecesiz",
+    },
+  ],
+  [
+    {
+      img: "https://turbosmurfs.gg/storage/products/e0ae212a474f6f082d616f707cb67efd.jpg",
+      title: "40,000 Mavi Öz Derecesiz Smurf - TR",
+      price: "14,99",
+      blueEssence: "40,000+",
+      region: "Türkiye",
+      rank: "Fresh Derecesiz",
+    },
+    {
+      img: "https://turbosmurfs.gg/storage/products/98833fc161eec943040ddeec465c6d38.jpg",
+      title: "50,000 Mavi Öz Derecesiz Smurf - TR",
+      price: "24,99",
+      blueEssence: "50,000+",
+      region: "Türkiye",
+      rank: "Fresh Derecesiz",
+    },
+    {
+      img: "https://turbosmurfs.gg/storage/products/b1421c9718f272d7c43d1cbe00c21427.jpg",
+      title: "60,000 Mavi Öz Derecesiz Smurf - TR",
+      price: "34,99",
+      blueEssence: "60,000+",
+      region: "Türkiye",
       rank: "Fresh Derecesiz",
     },
   ],
@@ -67,9 +67,21 @@ const Cards: FC<CardsProps> = ({ region }) => {
       className="grid opening-anim mx-auto grid-cols-3 mt-20 gap-10 max-w-4xl"
     >
       {mockCards[region].map((card, index) => (
-        <div key={index} className="p-5 rounded-xl card-shadow bg-[#242635]">
+        <div
+          key={index}
+          className="p-5 group hover:-translate-y-2 duration-300 transition rounded-xl card-shadow bg-[#242635] relative"
+        >
+          <div className="absolute top-8 right-8 z-10 rounded-full px-4 py-2 bg-[#ffc107] text-xs font-bold">
+            {" "}
+            🔥 Çok Popüler
+          </div>
           <div className="aspect-h-1 aspect-w-1 rounded-xl overflow-hidden">
-            <Image src={card.img} alt="card" fill />
+            <Image
+              src={card.img}
+              alt="card"
+              fill
+              className="group-hover:scale-105 transition duration-300"
+            />
           </div>
           <p className="text-center text-sm font-black py-4">{card.title}</p>
           <button className="flex gap-1 items-center w-full justify-center bg-[#43b6f9] rounded-full px-4 py-2 mb-4 hover:opacity-80 transition duration-300">

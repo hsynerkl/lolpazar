@@ -31,7 +31,7 @@ const SecondaryForm: FC<SecondaryFormProps> = ({
               handleBlueEssence("40.000", 2, 14.99);
             }}
           >
-            <div className="flex ">
+            <div className="flex items-center">
               <Image
                 src="https://i.imgur.com/qNrFYqp.png"
                 width={30}
@@ -52,7 +52,7 @@ const SecondaryForm: FC<SecondaryFormProps> = ({
               handleBlueEssence("50.000", 2, 24.99);
             }}
           >
-            <div className="flex">
+            <div className="flex items-center">
               <Image
                 src="https://i.imgur.com/qNrFYqp.png"
                 width={30}
@@ -73,7 +73,7 @@ const SecondaryForm: FC<SecondaryFormProps> = ({
               handleBlueEssence("60.000", 2, 34.99);
             }}
           >
-            <div className="flex">
+            <div className="flex items-center">
               <Image
                 src="https://i.imgur.com/qNrFYqp.png"
                 width={30}
