@@ -1,7 +1,9 @@
+import { useLogin } from "context/Login";
 import Image from "next/image";
 import Link from "next/link";
 
 const Header = () => {
+  const { handleToggleModal } = useLogin();
   return (
     <header className="h-20 font-semibold flex items-center bg-[#1c1f2c]">
       <div className="container flex justify-between">
@@ -49,7 +51,10 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <div className="flex items-center bg-gradient-to-r from-[#CC75FF] to-[#34D5FB] px-4 rounded-full cursor-pointer hover:opacity-80 duration-300 transition">
+        <div
+          className="flex items-center bg-gradient-to-r from-[#CC75FF] to-[#34D5FB] px-4 rounded-full cursor-pointer hover:opacity-80 duration-300 transition"
+          onClick={handleToggleModal}
+        >
           <svg
             viewBox="0 0 24 24"
             fill="white"

@@ -19,6 +19,18 @@ a {
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #242635;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c1f2c;
+  border-radius: 14px;
+}
+
 .opening-anim {
   animation: opening-keyframe 1s ease;
 }
