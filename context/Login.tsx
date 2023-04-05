@@ -21,7 +21,7 @@ type LoginContextProviderProps = {
 export const LoginContextProvider: FC<LoginContextProviderProps> = ({
   children,
 }) => {
-  const [modalIsOpen, setModalIsOpen] = useState(true);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const handleToggleModal = () => {
     setModalIsOpen((prev) => !prev);
